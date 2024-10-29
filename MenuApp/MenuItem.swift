@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct MenuItem {
+struct MenuItem: Identifiable {
     
+    var id: UUID = UUID()
     var name: String
     var price: String  // The reason for this is because I want to include the currency symbol on it.
     var imageName: String
